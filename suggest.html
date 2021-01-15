@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>The Modest Reader</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylyeshet" href="suggest.css" type="text/css">
+    </head>
+    <body class="suggestions">
+        <!--Background image: Thanks to Sincerely Media for sharing their work on Unsplash.-->
+        <div class="header">
+            <!--Logo here-->
+            <div id="navBar">
+                <h1 class= "verticalcenter" id="logo">the modest reader.</h1>
+                <ul class= "verticalcenter">
+                    <li><a  href="index.html">Home</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a class="active"href="#suggest">Suggestions</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="content">
+            <div class="firstBox">
+                <div>
+                    <div class="suggestHeader">
+                    <h1>have a suggestion on a book I should review?</h1>
+                </div>
+                <div class="formBox" >
+                    <form action="http://web.engr.oregonstate.edu/~zhangluy/tools/class-content/form_tests/check_request.php" method="post">
+                        <label>Name:
+                            <input class="bottomLine" type="text" name="name" size="30" maxlength="100">
+                        </label>
+                        <label>Email:
+                            <input type="email" name="email" size="30" maxlength="100">
+                        </label>
+                        <br>
+                        <p>How did you hear about us?</p>
+                        <label> <input type="radio" name="influence" value="Facebook"/>Facebook</label>
+                        <label> <input type="radio" name="influence" value="Instagram"/>Instagram</label>
+                        <label> <input type="radio" name="influence" value="Twitter"/>Twitter</label>
+                        <br>
+                        <br>
+                        <label>What book should I review next?
+                            <input type="text" name="book" size="30" maxlength="100">
+                        </label>
+                        <br>
+                        <p>
+                        <label for="comments">Any additonal comments?</label>
+                        <br />
+                        <textarea rows="4" cols="40" id="comments"></textarea>
+                        </p>
+                        <label>
+                            <input type="checkbox" name="subscribe" checked="checked"/> Sign me up for email updates</label>
+                        <br />
+                        <input type="submit" value="Submit review"/>
+                    </form>
+                </div>
+            </div>
+
+            
+        </div>
+
+        
+
+
+        
+        
+
+        <div id="footer">
+            <p>Web Development by Caitlyn Jameson. CS290-Web Development Project, Summer 2020.</p>
+
+        </div> 
+        
+        <script src="carousel.js"></script>
+    </body>
+</html>

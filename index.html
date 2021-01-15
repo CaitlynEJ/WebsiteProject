@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset = "UTF-8">
+        <title>The Modest Reader</title>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Serif:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <link rel="stylesheet" href="carousel.css" type="text/css">
+    </head>
+    <body>
+        <div class="header">
+            <!--Logo here-->
+            <div id="navBar">
+                <h1 class= "verticalcenter" id="logo">the modest reader.</h1>
+                <ul class= "verticalcenter">
+                    <li><a class="active" href="#Home">Home</a></li>
+                    <li><a href="library.html">Library</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="suggest.html">Suggestions</a></li>
+                </ul>
+            </div>
+        </div>
+        
+        <!--Slideshow Container-->
+        <div class ="slide-container">
+            <div class = "slide fade">
+                <img src = 'assets/slide1.png' alt="Book on table with glasses. Photo by Sincerly Media on Unsplash">
+            </div>
+            <div class = "slide fade">
+                <img src = 'assets/slide2.png' alt="Wall covered with books. Photo by Alfons Morales on Unsplash.">
+            </div>
+            <div class="slide fade">
+                <img src="assets/slide3.png" alt="Girl facing lake, reading a book. Thanks to Priscilla Du Preez for sharing their work on Unsplash.">
+
+            </div>
+
+            <a href="#" class="prev" title="Previous">&#10094</a>
+            <a href="#" class="next" title="Next">&#10095</a>
+        </div>
+
+        <div class="dots-container">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <div id="content">
+            <div class="firstBox center">
+                <div class="welcomeBox">
+                    <img id="homeImg" src ="assets/girlHide.jpg" alt="Girl hiding behind a book. Thanks to Toa Heftiba for sharing their work on Unsplash.">
+                </div>
+                <div class="welcomeParagraph">
+                    <h1>Welcome Reader</h1>
+                    <p>
+                        I hope that this site can inspire your next read, whether it is something new, or something old. I've collected the books I've read recently on the library page. Click the book to read my review! If you want to buy it, I've included a link also.
+                    </p>
+                    <p>Click the button below to download my top 10 books you need to read!</p>
+                    <a style="-webkit-appearance: button;-moz-appearance: button;appearance: button;text-decoration: none;color:white;background-color: #FF7564;
+                    padding: 20px;" href="assets/modestreader-bookmark.pdf" title="Modest Reader Top 10" download="modestreader-bookmark.pdf">Download Top 10</a>
+                </div>
+                    
+                
+            </div>
+            
+            <hr style="width:70%; margin:30px auto;">
+
+            <div class="center">
+                <h2 class="centerheaders">Recent Reads</h2>
+                <div class="bookRow">
+                        <div class="book">
+                            <a href="library.html#myModal">
+                                <img src="assets/crawdad.jpg" alt="Where the Crawdad Signs by Delia Owens">
+                            </a>
+                        </div>
+                        <div class="book">
+                            <a href="library.html">
+                                <img src="assets/vanishingHalf.jpg" alt="The Vanishing Half by Brit Bennett">
+                            </a>
+                        </div>
+                        <div class="book">
+                           <a href="library.html">
+                            <img src="assets/lightCannotSee.jpg" alt="All the Light We Cannot See by Anthony Doerr">
+                           </a> 
+                        </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <p>Web Development by Caitlyn Jameson. CS290-Web Development Project, Summer 2020.</p>
+         </div> 
+        
+        <script src="carousel.js"></script>
+    </body>
+</html>

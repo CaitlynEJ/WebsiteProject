@@ -1,0 +1,9 @@
+* {
+    box-sizing:border-box;
+}
+
+label input {
+    padding:10px;
+    margin: 10px 0;
+    border: 0;
+}
